@@ -1,0 +1,20 @@
+:root {
+    --homePage-color1: #FF7AAE; 
+    --homePage-color2: #E28FDB; 
+    --homePage-color3: #00C9C3; 
+    --homePage-color4: #7FD1AE; 
+
+    --background-color: #D1C7C7;
+    --bg-shade1-color: #aca4a8;
+    --bg-shade2-color: #827984;
+
+    --light-cyan-color: #709DA1;
+    --light-orange-color: #D1B293;
+
+    --ok-button-color: #82E79E;
+    --button-color: #E78282;
+  }
+
+body{
+    background-color: var(--background-color);
+}
