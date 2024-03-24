@@ -74,6 +74,10 @@ body{
     justify-content: center;
 }
 
+.page-main h1{
+    font-family: var(--headers-font);
+}
+
 .page-footer{
     height: 60px;
     background: darkgreen;
