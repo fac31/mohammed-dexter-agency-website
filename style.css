@@ -62,6 +62,7 @@ body{
 .page-header img{
     height: 80px;
     width: 80px;
+    background-color: #E78282;
 }
 
 .page-main{
