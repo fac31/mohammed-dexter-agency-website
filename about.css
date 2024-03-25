@@ -32,5 +32,17 @@
 
 .about-us-person p {
     font-size: 18pt;
+    position: relative;
+}
+
+.about-us-person p::before {
+    content: "“";
+    font-family: var(--sub-heading-font);
+    position: absolute;
+    font-size: 200pt;
+    opacity: 60%;
+    bottom: 40px;
+    left: 0;
+    line-height: 0.5;
 }
 /**************************************** End of About Us *************************************************/
