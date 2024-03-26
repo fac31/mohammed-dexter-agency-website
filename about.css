@@ -1,0 +1,48 @@
+/**************************************** About Us *************************************************/
+.about-us {
+    display: flex;
+    gap: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.about-us-person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    flex: 1 0 0;
+}
+
+.about-us-person img {
+    border-radius: 50%;
+    width: 300px;
+    aspect-ratio: 1 / 1;
+}
+
+.about-us-person h1 {
+    font-family: var(--sub-heading-font);
+    font-size: 40pt;
+}
+
+.about-us-person p {
+    font-size: 18pt;
+    position: relative;
+}
+
+.about-us-person p::before {
+    content: "“";
+    font-family: var(--sub-heading-font);
+    position: absolute;
+    font-size: 200pt;
+    opacity: 60%;
+    bottom: 40px;
+    left: 0;
+    line-height: 0.5;
+}
+/**************************************** End of About Us *************************************************/
