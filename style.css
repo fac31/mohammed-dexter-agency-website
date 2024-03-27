@@ -14,7 +14,7 @@
     --headers-font: "Limelight", sans-serif;
     --sub-heading-font: "Crushed", sans-serif;
     /*-------------Colors-------------*/
-    --homePage-color1: #FF7AAE; 
+    --homePage-color1: #e58aad; 
     --homePage-color2: #E28FDB; 
     --homePage-color3: #00C9C3; 
     --homePage-color4: #7FD1AE; 
@@ -27,13 +27,20 @@
     --button-color: #E78282;
   }
 
+
+
 *{
     font-family: var(--main-font);
     margin: 0;
+    padding: 0;
 }
 
 body{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: var(--background-color);
+    background-image: linear-gradient(43deg, var(--homePage-color1) 0%, var(--homePage-color4) 46%, var(--homePage-color2) 100%);
 }
 
 .container{
@@ -45,8 +52,8 @@ body{
 
 /*****************************Header and Navigation bar************************************/
 .page-header nav{
-    padding: 10px 20px;
-    margin-top: 5px;
+    padding: 10px 25px;
+    margin: 5px 0 60px 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -88,10 +95,40 @@ body{
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */ /* i removed this since I made the page-main take the full height of the view so this can be added separately to each page if needed */
-    height: 100%;
 }
 
 .page-main h1{
     font-family: var(--headers-font);
     font-size: 50pt;
+    margin: 50px 0 16px 0;
 }
+
+.agency-descriptions-p{
+    font-size: 18pt;
+    margin-bottom: 160px;
+}
+
+.homePage-buttons button{
+  background: var(--bg-shade2-color);
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  font-size: 16px;
+  min-height: 40px;
+  width: 120px;
+  text-align: center;
+  margin: 20px 50px;
+}
+
+.homePage-buttons button:hover,
+.homePage-buttons button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: var(--bg-shade2-color);
+}
+
+
+ 
