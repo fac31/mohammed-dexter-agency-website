@@ -122,7 +122,8 @@ body{
 .homePage-buttons button:active {
   background-color: initial;
   background-position: 0 0;
-  color: var(--bg-shade2-color);
+  color: white;
+  backdrop-filter: brightness(40%)
 }
 
 
