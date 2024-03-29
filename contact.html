@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <title>Contact</title>
+    <title>FiestaFavours - Contact</title>
 </head>
 <body>
     <div class="container">
@@ -21,15 +21,33 @@
         </header>
         <main class="page-main">
             <h1>Send us a message!</h1>
-            <p>We’d love to be at your party!</p>
+            <p class="contact-page-p">We’d love to be at your party!</p>
+            <form id="form">
+                <div class="square"></div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="nameField">
+             
+                <div class="square"></div>
+                <label for="companyname">Company name</label>
+                <input type="text" name="companyname" id="CompanyNameField" required>
+             
+                <div class="left">
+                    <div class="square"></div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="emailField" required>
+                </div>
+                <div class="right"> 
+                    <div class="square"></div>
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="">
+                </div> 
 
-
-
-
-            <!--Add your main content here-->
-
-
-
+                <div class="square"></div>
+                <label for="message">Message</label>
+                <textarea name="message" id="" cols="30" rows="6"></textarea>
+        
+                <input type="submit" value="Submit">
+            </form>
 
         </main>
     </div>
