@@ -22,7 +22,7 @@
     --light-orange-color: #D1B293;
     --ok-button-color: #82E79E;
     --button-color: #E78282;
-  }
+}
 
 *{
     font-family: var(--main-font);
@@ -58,7 +58,6 @@ body{
 .page-header ul{
     display: flex;
     justify-content: space-between;
-    width: 24%;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -98,6 +97,10 @@ body{
     margin: 50px 0 16px 0;
 }
 
+.page-main p {
+    text-align: center;
+}
+
 .agency-descriptions-p{
     font-size: 18pt;
     margin-bottom: 160px;
@@ -122,7 +125,8 @@ body{
 .homePage-buttons button:active {
   background-color: initial;
   background-position: 0 0;
-  color: var(--bg-shade2-color);
+  color: white;
+  backdrop-filter: brightness(40%)
 }
 
 
