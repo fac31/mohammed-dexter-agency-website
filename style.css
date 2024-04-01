@@ -23,11 +23,9 @@
     --bg-shade2-color: #827984;
     --light-cyan-color: #709DA1;
     --light-orange-color: #D1B293;
-    --ok-button-color: #82E79E;
+    --ok-button-color: #6ee18f;
     --button-color: #E78282;
   }
-
-
 
 *{
     font-family: var(--main-font);
@@ -131,7 +129,7 @@ body{
 .homePage-buttons button:active {
   background-color: initial;
   background-position: 0 0;
-  color: var(--bg-shade2-color);
+  color: #000000;
 }
 /********************************End of Index page****************************************/
 
@@ -154,7 +152,7 @@ body{
     border: 1px solid var(--bg-shade2-color);
   }
 
-.page-main input[type="text"], input[type="email"], textarea{
+.page-main input[type="text"], input[type="email"], textarea, input[type="tel"]{
     box-sizing: border-box;
 	outline: none;
 	display: block;
@@ -168,7 +166,7 @@ body{
 	height: 24px;
 }
 
-.right input[type="text"], .left input[type="email"]  {
+.right input[type="tel"], .left input[type="email"]  {
     width: 90%; 
 }
 
@@ -191,7 +189,7 @@ body{
     display: block;
     margin: 0 auto;
     width: 140px;
-    background-color: #13aa52;
+    background-color: var(--ok-button-color);
     border: 1px solid #13aa52;
     padding: 8px;
     border-radius: 4px;
@@ -207,5 +205,19 @@ input[type="submit"]:hover {
   box-shadow: rgba(0, 0, 0, .15) 0 3px 10px 0;
   transform: translateY(-2px);
 }
-
+.square:has(~ #nameField:valid) {
+    background-color: var(--ok-button-color);
+}
+.square:has(~ #CompanyNameField:valid) {
+    background-color: var(--ok-button-color);
+}
+.square:has(~ #emailField:valid) {
+    background-color: var(--ok-button-color);
+}
+.square:has(~ #phoneField:valid) {
+    background-color: var(--ok-button-color);
+}
+.square:has(~ #messageTxt:valid) {
+    background-color: var(--ok-button-color);
+}
  /********************************End of Contact page************************************/
