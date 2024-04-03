@@ -1,0 +1,113 @@
+/**************************************** Responsive Styling for all pages *************************************************/
+
+/* 
+    I like to find these values by switching to the mobile view in devtools and 
+    resising the screen until the website starts to look funny and just taking the nearest
+    whole number.
+
+    Unfortunately these px values cant be put in variables
+*/
+@media screen and (max-width: 1000px) {
+    .page-main h1 {
+        font-size: 37pt;
+    }
+    .page-main p {
+        font-size: 15pt;
+    }
+
+    .about-us {
+        gap: 70px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .about-us-person img {
+        width: 200px;
+    }
+
+    .about-us-person h1 {
+        font-size: 30pt;
+        margin: 0;
+    }
+
+    .about-us-person p {
+        font-size: 15pt;
+        padding: 0;
+    }
+
+    /* It will be difficult to make the quote look good on mobile so I'll hide it instead */
+    .about-us-person p::before {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .page-main h1 {
+        font-size: 33pt;
+    }
+    .page-main p {
+        font-size: 12pt;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .homePage-buttons button {
+        width: 100px;
+        font-size: 14px;
+        margin: 20px 35px;
+    }
+
+    .about-us {
+        gap: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about-us-person {
+        gap: 30px;
+    }
+
+    .about-us-person img {
+        width: 150px;
+    }
+
+    .about-us-person h1 {
+        font-size: 25pt;
+        margin: 0;
+    }
+
+    .about-us-person p {
+        font-size: 12pt;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .page-main h1 {
+        font-size: 29pt;
+    }
+
+    .about-us {
+        gap: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .about-us-person {
+        gap: 20px;
+    }
+
+    .about-us-person img {
+        width: 120px;
+    }
+
+    .about-us-person h1 {
+        font-size: 22pt;
+        margin: 0;
+    }
+
+    .about-us-person p {
+        font-size: 10pt;
+        padding: 0;
+    }
+}
