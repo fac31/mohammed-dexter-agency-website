@@ -1,0 +1,40 @@
+/**************************************** Responsive Styling for home page *************************************************/
+
+/* 
+    I like to find these values by switching to the mobile view in devtools and 
+    resising the screen until the website starts to look funny and just taking the nearest
+    whole number.
+
+    Unfortunately these px values cant be put in variables
+*/
+@media screen and (max-width: 1000px) {
+    .page-main h1 {
+        font-size: 37pt;
+    }
+    .page-main p {
+        font-size: 15pt;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .page-main h1 {
+        font-size: 33pt;
+    }
+    .page-main p {
+        font-size: 12pt;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .homePage-buttons button {
+        width: 100px;
+        font-size: 14px;
+        margin: 20px 35px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .page-main h1 {
+        font-size: 29pt;
+    }
+}
