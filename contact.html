@@ -23,28 +23,28 @@
             <h1>Send us a message!</h1>
             <p class="contact-page-p">We’d love to be at your party!</p>
             <form id="form">
-                <div class="square"></div>
+                <div class="square name-square"></div>
                 <label for="name">Name</label>
-                <input type="text" name="name" id="nameField" required>
+                <input type="text" name="name" id="nameField" required placeholder="Enter Your Name">
              
-                <div class="square"></div>
+                <div class="square company-name-square"></div>
                 <label for="companyname">Company name</label>
-                <input type="text" name="companyname" id="CompanyNameField" required >
+                <input type="text" name="companyname" id="CompanyNameField" required placeholder="Enter Company Name">
              
                 <div class="left">
-                    <div class="square"></div>
+                    <div class="square email-square"></div>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="emailField" required>
+                    <input type="email" name="email" id="emailField" required placeholder="Enter Email">
                 </div>
                 <div class="right"> 
-                    <div class="square"></div>
+                    <div class="square number-square"></div>
                     <label for="phone">Phone</label>
-                    <input type="tel" name="phone" id="phoneField" pattern= "[0-9]{10,14}" required>
+                    <input type="tel" name="phone" id="phoneField" pattern="[0-9]{10,14}" required placeholder="Enter Number">
                 </div> 
 
-                <div class="square"></div>
+                <div class="square message-square"></div>
                 <label for="message">Message</label>
-                <textarea name="message" id="messageTxt" cols="30" rows="6" required></textarea>
+                <textarea name="message" id="messageTxt" cols="30" rows="6" required placeholder="Your Message!"></textarea>
         
                 <input type="submit" value="Submit">
             </form>

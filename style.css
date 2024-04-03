@@ -127,10 +127,18 @@ body{
 
 .homePage-buttons button:hover,
 .homePage-buttons button:active {
-  background-color: initial;
-  background-position: 0 0;
-  color: #000000;
+    backdrop-filter: brightness(40%);
+    background-color: transparent;
 }
+
+.homePage-buttons button a {
+    text-decoration: none;
+    color: black;
+}
+.homePage-buttons button:hover a {
+    color: white;
+}
+
 /********************************End of Index page****************************************/
 
 /********************************Contact page styling************************************/
@@ -139,11 +147,10 @@ body{
     margin: 20px 0 50px 0;
 }
 
-.page-main form{
+.page-main form {
     width: 35%;
     margin-bottom: 50px;
-    color: white;
-    backdrop-filter: brightness(40%)
+    color: black;
 }
 
 .square {
@@ -159,11 +166,10 @@ body{
 	outline: none;
 	display: block;
 	width: 95%;
-	padding: 0px;
 	border: none;
 	border-bottom: 1.4px solid var(--bg-shade2-color);
 	background: transparent;
-	margin: 0 0 35px 10px;
+	margin: 5px 0 35px 10px;
 	font-size: 14pt;
 	height: 24px;
 }
@@ -207,19 +213,19 @@ input[type="submit"]:hover {
   box-shadow: rgba(0, 0, 0, .15) 0 3px 10px 0;
   transform: translateY(-2px);
 }
-.square:has(~ #nameField:valid) {
+.name-square:has(~ #nameField:valid) {
     background-color: var(--ok-button-color);
 }
-.square:has(~ #CompanyNameField:valid) {
+.company-name-square:has(~ #CompanyNameField:valid) {
     background-color: var(--ok-button-color);
 }
-.square:has(~ #emailField:valid) {
+.email-square:has(~ #emailField:valid) {
     background-color: var(--ok-button-color);
 }
-.square:has(~ #phoneField:valid) {
+.number-square:has(~ #phoneField:valid) {
     background-color: var(--ok-button-color);
 }
-.square:has(~ #messageTxt:valid) {
+.message-square:has(~ #messageTxt:valid) {
     background-color: var(--ok-button-color);
 }
  /********************************End of Contact page************************************/
